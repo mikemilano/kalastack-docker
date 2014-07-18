@@ -1,0 +1,9 @@
+FROM ubuntu:14.04
+MAINTAINER Mike Pirog <mike@kalamuna.com>
+
+# Get the most recent things
+RUN apt-get update
+RUN apt-get upgrade -y
+
+# Install basic utilities
+RUN apt-get install -y -q iputils-ping wget curl tree vim

@@ -1,0 +1,80 @@
+{
+  "images": [
+    {
+      "title": "Kalabox Data (default)",
+      "name": "pirog/kaladata-docker",
+      "description": "provides a standard unit of persistant data storage for Kalabox.",
+      "role": "data",
+      "method": "pull"
+    },
+    {
+      "title": "Kalabox Data (From Github Repo)",
+      "name": "kalamuna/kalabox-data-dev",
+      "description": "provides a standard unit of persistant data storage for Kalabox.",
+      "role": "data",
+      "method": "build",
+      "source": "https://github.com/kalamuna/kaladata-docker.git"
+    },
+    {
+      "title": "Kalabox Data (Dev Build)",
+      "name": "kalamuna/kalabox-data",
+      "description": "provides a standard unit of persistant data storage for Kalabox.",
+      "role": "data",
+      "method": "build",
+      "source": "dockerfiles/data",
+      "includes": [
+        "includes/base_instructions"
+      ]
+    },
+    {
+      "title": "Kalabox MySQL (default)",
+      "name": "kalamuna/kalabox-mysql",
+      "role": "mysql",
+      "method": "build",
+      "source": "dockerfiles/mysql",
+      "includes": [
+        "includes/base_instructions"
+      ]
+    },
+    {
+      "title": "Kalabox Nginx (default)",
+      "name": "kalamuna/kalabox-nginx",
+      "role": "nginx",
+      "method": "build",
+      "source": "dockerfiles/nginx",
+      "includes": [
+        "includes/base_instructions"
+      ]
+    },
+    {
+      "title": "Kalabox PHP 5.5 (default)",
+      "name": "kalamuna/kalabox-php",
+      "role": "php",
+      "method": "build",
+      "source": "dockerfiles/php",
+      "includes": [
+        "includes/base_instructions"
+      ]
+    },
+    {
+      "title": "Kalabox PHP 5.3",
+      "name": "kalamuna/kalabox-php53",
+      "role": "php",
+      "method": "build",
+      "source": "dockerfiles/php53",
+      "includes": [
+        "includes/base_instructions"
+      ]
+    },
+    {
+      "title": "Kalabox Proxy (Dev)",
+      "name": "kalamuna/kalabox-proxy",
+      "role": "proxy",
+      "method": "build",
+      "source": "dockerfiles/proxy",
+      "includes": [
+        "includes/base_instructions"
+      ]
+    }
+  ]
+}
