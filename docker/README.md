@@ -1,10 +1,10 @@
-Kalabox Docker Build Manager
+Kalabox Docker Image Manager
 ===========================
 
 This directory provides configurations to pull and/or build Docker images which are to be available
 to Kalabox sites.
 
-This is only concept with the goal of allowing users to extend available images with this same
+This is only concept at this point, with the goal of allowing users to extend available images with this same
 format outside of core.
 
 ## config.json
