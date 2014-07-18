@@ -19,6 +19,9 @@ This file defines detail about each image. The following properties can be defin
 - `source`: The directory of the Dockerfile (relative), URL to a git repo, or repo name for `pull`.
 - `includes`: An optional array of files to be prepended to a Dockerfile before building. (for maintainability & caching benefits)
 
+Maybe even items like `docker run` attributes could be defined in this config if there were any settings
+that would vary per image.
+
 ## Roles
 
 Each image can fulfill a specific role a site running in Kalabox requires.
